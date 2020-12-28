@@ -1,0 +1,16 @@
+
+<div [style.background-color]="color">
+<input
+#monInput 
+type="text" 
+class="form-control"
+[(ngModel)]="color">
+
+<button 
+class="btn btn primary"
+(click)="onClick(monInput.value)">
+Change Color
+</button>
+
+
+</div>
